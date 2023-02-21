@@ -1,5 +1,5 @@
 <?php
-$mysqli = include_once "conexion.php";
+$mysqli = include_once "config/conexion.php";
 $nombre = $_POST["nombre"];
 $descripcion = $_POST["descripcion"];
 $sentencia = $mysqli->prepare("INSERT INTO videojuegos
@@ -8,4 +8,4 @@ VALUES
 (?, ?)");
 $sentencia->bind_param("ss", $nombre, $descripcion);
 $sentencia->execute();
-header("Location: listar.php");
+header("Location: index.php");

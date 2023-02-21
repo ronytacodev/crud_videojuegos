@@ -1,4 +1,4 @@
-<?php include_once "encabezado.php"; ?>
+<?php include_once "template/encabezado.php"; ?>
 <div class="row">
     <div class="col-12">
         <h1>Registrar videojuego</h1>
@@ -15,4 +15,4 @@
         </form>
     </div>
 </div>
-<?php include_once "pie.php"; ?>
+<?php include_once "template/pie.php"; ?>
